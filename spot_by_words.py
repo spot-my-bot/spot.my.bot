@@ -6,7 +6,7 @@ sp = sy.Spotify(auth=None)
 def get_songs(words, limit=50):
 	if limit > 50:
 		limit = 50
-	return get_tracks(words)
+	return get_tracks(words, limit)
 
 def get_tracks(words, limit):
 	tracks = sp.search(q=' '.join(words), type='track', limit=limit)['tracks']['items']

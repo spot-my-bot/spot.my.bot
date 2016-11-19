@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import spot_my_bot as smb
+import spot_by_words as sbw
 from pprint import pprint
 if __name__ == '__main__':
-	pprint(smb.get_songs(words = ['love', 'hate']))
+	pprint(sbw.get_songs(words = ['love', 'hate']))
